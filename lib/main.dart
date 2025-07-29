@@ -1,28 +1,15 @@
-//Some uses of variables
-
-// ignore_for_file: unused_local_variable
-
-/*Variables in programming are the basis for temporarily storing data 
-within the program during its execution.*/
-//We use variables to reuse a value more than once.
-//To update the value while the program is running
-//To store user input
-
-//create variable--> 1.data type--->2.name variable = The name of the place where the value is stored
-/*
-Some rules for naming a variable:
-
-1. The name must begin with a letter or a symbol (_) only.
-2. It can contain letters, numbers, or a _, but must not begin with a number or a _.
-3. It must not be the same name as a Dart reserved word.
+/* permitve data type 1. string , 2. int , 3. bool . 4. dynamic ,5. double
 */
-
+//The string is defined as ' ' or " "
 void main() {
-  String name;
-  name = 'khaled';
-  //memory[]= -->name
-  print('my name is $name');
-  print('my name is $name');
-  print('my name is $name');
-  print('my name is $name');
+  //If we need to use ', inside two single quotations, there will be a problem that will not include all the strings.
+  //The solution is either to replace the single caution with a double caution or to use the (\) before the ' that is inside the string
+  String text = 'khaled\'s fav hobby is programing';
+
+  // \t --> tab, which is a space of 4 to 8 horizontal spaces
+  // /n --> new line
+  text = 'khaled \t fav hobby \n is programming';
+  //If we want to print the string as is without affecting any distinctive marks, we write r before the caution.
+  text = r'khaled fav hobby is programming ';
+  print(text);
 }
